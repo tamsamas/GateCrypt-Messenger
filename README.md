@@ -1,8 +1,8 @@
-# Chat App API Documentation
+# GateCrypt API Documentation
 
 ## Base URL
 ```
-https://localhost:8443
+http://localhost:8443
 ```
 
 ## Authentication
@@ -497,7 +497,22 @@ Common HTTP status codes:
 - **Rate Limiting:** 
   - Login: 10 attempts per 60 seconds
   - Registration: 20 attempts per 5 seconds
-  - Messages: 8 per 10 seconds
+  - Messages: 8 per 10 seconds  
 - **Encryption:** AES-256 keys generated per conversation
 - **Timing Attack Protection:** Uses dummy password hash for non-existent users during login
 - **SQL Injection Protection:** Parameterized queries throughout
+
+
+
+  ## Frontend encryption explained in Minecraft terms
+
+steve wants to chat with alex but in order to do that steve needs a specific code to enter the same world as alex, so steve asks the admins to send the code to steve
+after steve recieved the code, the admins will wait for alex to come online but until then admins will temporarily store it and give it to her when time comes
+after both of them has the code they can chat, but let's say they have to go eat dinner and log off
+the next day steve wants to chat with alex again and goes to the same world with the same code, but asks the admins if a new code has dropped yet
+if yes, the admins will say yes and steve will get a new code, so as alex if it was her who asked for a new code
+if no, then everything is the same, both of them chat with the same code in the world
+let's say
+alex loses the key because a creeper blew her up
+then she will ask the admins to get a new code with steve so they can go into the same world to chat
+the admins will hand out both of the same codes again and reset the old chat because it's useless without the old codes
