@@ -1,1 +1,0 @@
-# GateCrypt-Messenger
